@@ -29,12 +29,12 @@ export default function CharacterDetails(props) {
     return (
         <StyledCharacterDetails>
             <ul>
-                <h6>Birth Year: {characterToBeExpanded.birth_year}</h6>
-                <h6>Eye Color: {characterToBeExpanded.eye_color}</h6>
-                <h6>Height: {characterToBeExpanded.height}</h6>
-                <h6>Mass: {characterToBeExpanded.mass}</h6>
-                <h6>Homeworld: {homeWorldData}</h6>
-                <button onClick={()=> closeDetails(index)}>Close</button>
+                <h6 key="1">Birth Year: {characterToBeExpanded.birth_year}</h6>
+                <h6 key="3">Eye Color: {characterToBeExpanded.eye_color}</h6>
+                <h6 key="4">Height: {characterToBeExpanded.height}</h6>
+                <h6 key="5">Mass: {characterToBeExpanded.mass}</h6>
+                <h6 key="6">Homeworld: {homeWorldData}</h6>
+                <button key="7" onClick={()=> closeDetails(index)}>Close</button>
             </ul>
         </StyledCharacterDetails>
     )
