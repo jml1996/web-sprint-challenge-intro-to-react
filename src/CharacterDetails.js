@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import styled from "styled-components";
 import axios from "axios";
-
+// I believe this would count as the first stretch goal:
+// "Make the Character component more complex and break it into several subcomponents."
 
 export default function CharacterDetails(props) {
     const { peopleData, index, closeDetails } = props;
