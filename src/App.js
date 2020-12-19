@@ -85,14 +85,19 @@ const Title = styled.h1`
 // `
 
 const StyledCharacterBar = styled.div`
-  // I was trying to get this to highlight only the name of the character 
-  // for which key === index2 (i.e., the selected character), but the key prop
-  // keeps registering as undefined here in StyledCharacterBar even when it has
-  // the correct value in the people.Data map function above (i.e., as "index")
-  background-color: ${pr => (pr.index2) ? pr.theme.highLightBackground : pr.theme.normalBackground};
   border: dotted;
   margin-top: 8%;
   margin-bottom: 8%;
   border: 1px;
   color: white;
 `
+
+// The below was in StyledCharacterBar on sprint submission, but I am removing it for
+// deploy because it looks bad.
+// So theme.js is not really necessary anymore, unless some sort of highlight
+// on click is desired.
+  // I was trying to get this to highlight only the name of the character 
+  // for which key === index2 (i.e., the selected character), but the key prop
+  // keeps registering as undefined here in StyledCharacterBar even when it has
+  // the correct value in the people.Data map function above (i.e., as "index")
+  // background-color: ${pr => (pr.index2) ? pr.theme.highLightBackground : pr.theme.normalBackground};
